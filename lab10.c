@@ -28,7 +28,8 @@ struct Trie *createTrie()
 void insert(struct Trie *pTrie, char *word)
 {
     int i = 0; // Initialize i
-    while (word[i] != '\0') {
+    while (word[i] != '\0') 
+    {
         int nextIndex = word[i] - 'a';
         if (pTrie->next[nextIndex] == NULL)
         {
@@ -45,7 +46,8 @@ void insert(struct Trie *pTrie, char *word)
 int numberOfOccurances(struct Trie *pTrie, char *word)
 {
     int i = 0;
-    while (word[i] != '\0') {
+    while (word[i] != '\0') 
+    {
         int nextIndex = word[i] - 'a';
         if (pTrie->next[nextIndex] == NULL)
         {
